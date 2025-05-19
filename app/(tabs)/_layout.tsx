@@ -114,6 +114,8 @@ import { icons } from '@/constants/icons';
 
 export default function TabsLayout() {
   return (
+    <>
+       
     <Tabs
       screenOptions={{
         tabBarStyle: {
@@ -160,7 +162,7 @@ export default function TabsLayout() {
                   source={icons.home}
                   style={{ width: 20, height: 20, tintColor: '#151312', marginRight: 6 }}
                 />
-                <Text style={{ color: '#151312', fontWeight: 'bold' }}>Home</Text>
+                {/* <Text style={{ color: '#151312', fontWeight: 'bold' }}>Home</Text> */}
               </View>
             ) : (
               <Image
@@ -219,5 +221,7 @@ export default function TabsLayout() {
         }}
       />
     </Tabs>
+    </>
+
   );
 }
